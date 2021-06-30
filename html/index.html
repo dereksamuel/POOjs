@@ -7,6 +7,11 @@
   <title>MiniPlatzi</title>
 </head>
 <body>
-  <script src="../js/main.js"></script>
+  <script src="../js/main.mjs" type="module"></script>
+  <script type="module">
+    import { Classes } from "../js/main.mjs";
+    const abstractionIntoJs = new Classes({ name: "Hola", duration: new Date(), });
+    console.log(abstractionIntoJs.stop());
+  </script>
 </body>
 </html>
